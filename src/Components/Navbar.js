@@ -64,7 +64,7 @@ const Example = (props) => {
                                 <NavLink href="#!"><p>Контакты</p></NavLink>
                             </NavItem>
                         </Nav>
-                        <NavbarText className="d-flex">
+                        <NavbarText className="d-flex sardor">
                             <InputGroup className="d-flex search">
                                 <Input className="input " placeholder="Search"/>
                                 <InputGroupAddon addonType="append" className="lupa social4">
@@ -86,7 +86,7 @@ const Example = (props) => {
 
                 </Navbar>
 
-                    <InputGroup className=" search2">
+                    <InputGroup className=" search2 mb-3">
                         <div className="div d-flex mobile">
                             <InputGroupAddon addonType="append" className="lupa social4 lupa_mobile">
                                 <Button type="button" className=""> <img src="./images/lupa.svg" alt=""/></Button>

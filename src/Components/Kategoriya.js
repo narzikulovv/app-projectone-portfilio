@@ -1,0 +1,75 @@
+import React from 'react';
+
+const Kategoriya = () => {
+    return (
+        <div className="gradiend container-fluid">
+            <div className="container con">
+                <div className="row rov">
+                    <div className="col-12 katagoriya ">
+                        <div className="container d-flex align-items-center justify-content-between write">
+                            <h2>Категории</h2>
+                            <a href="#!" className="nav-link text-dark pasmatrit">
+                                Посмотреть все <img src="./images/right_arrow.svg" alt=""/></a>
+                            <a href="#!" className="nav-link text-dark vse">Все<img src="./images/right_arrow.svg" alt=""/></a>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-6 col-md-6 px-0 mb-2 py-0 dazmol h-100">
+                       <div className="h-100 w-100 ">
+                           <img src="./images/dazmol.png"className="w-100 h-100" alt=""/>
+                           <div className="write">
+                               <h5>Мелкая бытовая <br/>
+                                   техника</h5>
+                           </div>
+                       </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-6 px-0  col-md-6 rasmlar h-100">
+                        <div className="container rasmlar_container">
+                            <div className="row mb rasmlar_row">
+                                <div className="col-6   rasmlar_col">
+                                   <div className="col-rasm">
+                                       <img src="./images/telefon.png" alt=""/>
+                                       <div className="write2">
+                                           <h5>Телефоны</h5>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div className="col-6  rasmlar_col">
+                                    <div className="col-rasm">
+                                        <img src="./images/tv.png" alt=""/>
+                                        <div className="write2">
+                                            <h5>Телевизоры</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row  rasmlar_row ">
+                                <div className="col-6  rasmlar_col">
+                                    <div className="col-rasm">
+                                        <img src="./images/pech.png" alt=""/>
+                                        <div className="write2">
+                                            <h5>Печи</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-6  rasmlar_col">
+                                    <div className="col-rasm">
+                                        <img src="./images/muzlatgich.png" alt=""/>
+                                        <div className="write2">
+                                            <h5>Холодильники</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 text-center batafsil">
+                        <button type="button" className="btn btn-success">Еще</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Kategoriya;

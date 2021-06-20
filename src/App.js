@@ -4,20 +4,26 @@ import Navbar from "./Components/Navbar";
 
 
 import Banner from './Components/Banner';
+import Kategoriya from "./Components/Kategoriya";
+import Shivaki from "./Components/Shivaki";
+import Footer from "./Components/Footer";
 
-<<<<<<< HEAD
-     <Banner />
-    </div>
-  );
-=======
+
 function App() {
     return (
         <div className="App">
             <Navbar/>
             <Banner/>
+
+            <Kategoriya/>
+
+            <Shivaki/>
+
+
+            <Footer/>
         </div>
     );
->>>>>>> 4154a9c73063a0aa864453d36c4853b248570bb0
+
 }
 
 export default App;
