@@ -46,22 +46,20 @@ const Example = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className="navItem">
-                                <NavLink href="#!"><p>Категории</p></NavLink>
+                                <NavLink href="#!"><a href="#!">Категории</a></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><p>Партнеры</p></NavLink>
+                                <NavLink href="#!"><a href="#!">Партнеры</a></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><p>Сервисные центры</p></NavLink>
+                                <NavLink href="#!"><a href="#!">Сервисные центры</a></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><p>Новости</p></NavLink>
+                                <NavLink href="#!"><a href="#!">Новости</a></NavLink>
                             </NavItem>
+
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><p>Вакансии</p></NavLink>
-                            </NavItem>
-                            <NavItem className="navItem1">
-                                <NavLink href="#!"><p>Контакты</p></NavLink>
+                                <NavLink href="#!"><a href="#!">Контакты</a></NavLink>
                             </NavItem>
                         </Nav>
                         <NavbarText className="d-flex sardor">

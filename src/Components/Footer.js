@@ -2,14 +2,14 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="container footer_container">
+        <div className="container footer_container pt-5">
             <div className="row footer_row">
 
 
                 <div className="col-lg-8 col-md-8 col-sm-12 col-12 footer_col">
                     <div className="row footer_row2">
                         <div className="col-lg-4  col-md-6 col-sm-6 col-6 footer_col2">
-                            <a href="#!" className="footerLink">О компании</a>
+                            <a href="#!" className="footerLink nav-link pl-0">О компании</a>
                             <ul className="navbar-nav footer_navbarNav nav">
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Гарантии качества</a></li>
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Адреса и контакты</a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-6 footer_col2">
-                            <a href="#!" className="footerLink">Продукция партнеров</a>
+                            <a href="#!" className="footerLink nav-link pl-0">Продукция партнеров</a>
                             <ul className="navbar-nav footer_navbarNav nav">
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Shivaki</a></li>
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Samsung</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12 footer_col2">
-                            <a href="#!" className="footerLink">Все категории</a>
+                            <a href="#!" className="footerLink nav-link pl-0">Все категории</a>
                             <ul className="navbar-nav footer_navbarNav nav">
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Мелакая бытовая техника</a></li>
                                 <li className="nav-item footer_navItem"><a href="#!" className="nav-link footer_navLink">Телефоны</a></li>

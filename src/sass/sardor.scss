@@ -33,7 +33,7 @@ body {
       box-shadow: none;
       margin-right: -25px !important;
       @media (max-width: 1600px) {
-        width: 120px;
+        width: 150px!important;
       }
       @media (max-width: 768px) {
         width: 100%;
@@ -207,13 +207,14 @@ body {
       margin-left: 0;
     }
 
-    p {
+    a {
       font-family: SF Pro Display;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
       color: #1C1C33;
+      text-decoration: none;
       @media (max-width: 1200px) {
         font-size: 14px;
       }
@@ -235,13 +236,14 @@ body {
       margin-right: 5px;
     }
 
-    p {
+    a {
       font-family: SF Pro Display;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
       color: #1C1C33;
+      text-decoration: none;
       @media (max-width: 1200px) {
         font-size: 14px;
       }
