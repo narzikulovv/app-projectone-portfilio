@@ -10,7 +10,6 @@ import {
     NavbarText
 } from 'reactstrap';
 import {InputGroup, InputGroupAddon, Button, Input} from 'reactstrap';
-import {BiSearchAlt} from "react-icons/bi";
 import {AiFillHeart} from "react-icons/ai";
 import {AiOutlineShoppingCart} from "react-icons/ai";
 import {MdExitToApp} from "react-icons/md";
@@ -20,6 +19,30 @@ const Example = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+
+
+
+    const exitHomePage = (r) => {
+        r.preventDefault();
+
+        let sardor = 120;
+        let sardor1 = 120;
+
+        if (sardor === sardor1){
+            localStorage.setItem("login", "");
+            localStorage.setItem("surname", "");
+            localStorage.setItem("mail", "");
+            localStorage.setItem("logget", "");
+
+            props.history.push("/")
+        }
+
+
+
+    };
+
+
 
     return (
         <div className="container">
@@ -76,7 +99,18 @@ const Example = (props) => {
                                 <button type="button"><AiOutlineShoppingCart/></button>
                             </div>
                             <div className="social3 social ">
-                                <button type="button" className="d-flex align-items-center justify-content-center">
+
+
+
+                                <button
+                                    onClick={exitHomePage}
+                                    type="button"
+                                    className="d-flex align-items-center justify-content-center">
+
+
+
+
+
                                     <MdExitToApp/> <h6 className="">Exit</h6></button>
                             </div>
                         </NavbarText>

@@ -8,7 +8,10 @@ import Shivaki from "../Components/Shivaki";
 import Online from "../Components/Online";
 import Footer from "../Components/Footer";
 
-const HomePages = () => {
+const HomePages = (props) => {
+
+
+
     return (
         <div>
             <Navbarr/>
