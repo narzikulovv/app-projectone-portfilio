@@ -13,6 +13,7 @@ import {InputGroup, InputGroupAddon, Button, Input} from 'reactstrap';
 import {AiFillHeart} from "react-icons/ai";
 import {AiOutlineShoppingCart} from "react-icons/ai";
 import {MdExitToApp} from "react-icons/md";
+import {Link} from "react-router-dom"
 
 
 const Example = (props) => {
@@ -21,34 +22,23 @@ const Example = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
 
-
-
     const exitHomePage = (r) => {
         r.preventDefault();
 
-        let sardor = 120;
-        let sardor1 = 120;
+        localStorage.setItem("login", "");
+        localStorage.setItem("surname", "");
+        localStorage.setItem("mail", "");
+        localStorage.setItem("logget", "");
 
-        if (sardor === sardor1){
-            localStorage.setItem("login", "");
-            localStorage.setItem("surname", "");
-            localStorage.setItem("mail", "");
-            localStorage.setItem("logget", "");
-
-            props.history.push("/")
-        }
-
-
-
+        props.history.push("/gygy")
     };
-
 
 
     return (
         <div className="container">
             <div className="row w-100 ">
                 <Navbar color="light" light className="w-100 bg-white sardor" expand="md">
-                    <NavbarBrand href="/"><img src="./images/Logo.svg" alt=""/></NavbarBrand>
+                    <Link to="/главний"><img src="./images/Logo.svg" alt=""/></Link>
 
 
                     <div className="wrap d-flex align-items-center">
@@ -69,20 +59,20 @@ const Example = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className="navItem">
-                                <NavLink href="#!"><a href="#!">Категории</a></NavLink>
+                                <NavLink href="#!"><Link to="/категории">Категории</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><a href="#!">Партнеры</a></NavLink>
+                                <NavLink href="#!"><Link to="/партнеры">Партнеры</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><a href="#!">Сервисные центры</a></NavLink>
+                                <NavLink href="#!"><Link to="/сервисные">Сервисные центры</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><a href="#!">Новости</a></NavLink>
+                                <NavLink href="#!"><Link to="/новости">Новости</Link></NavLink>
                             </NavItem>
 
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><a href="#!">Контакты</a></NavLink>
+                                <NavLink href="#!"><Link to="контакты">Контакты</Link></NavLink>
                             </NavItem>
                         </Nav>
                         <NavbarText className="d-flex sardor">
@@ -101,14 +91,10 @@ const Example = (props) => {
                             <div className="social3 social ">
 
 
-
                                 <button
                                     onClick={exitHomePage}
                                     type="button"
                                     className="d-flex align-items-center justify-content-center">
-
-
-
 
 
                                     <MdExitToApp/> <h6 className="">Exit</h6></button>
@@ -118,14 +104,14 @@ const Example = (props) => {
 
                 </Navbar>
 
-                    <InputGroup className=" search2 mb-3">
-                        <div className="div d-flex mobile">
-                            <InputGroupAddon addonType="append" className="lupa social4 lupa_mobile">
-                                <Button type="button" className=""> <img src="./images/lupa.svg" alt=""/></Button>
-                            </InputGroupAddon>
-                            <Input className="input pl-4 border-0 input_mobile" placeholder="Search"/>
-                        </div>
-                    </InputGroup>
+                <InputGroup className=" search2 mb-3">
+                    <div className="div d-flex mobile">
+                        <InputGroupAddon addonType="append" className="lupa social4 lupa_mobile">
+                            <Button type="button" className=""> <img src="./images/lupa.svg" alt=""/></Button>
+                        </InputGroupAddon>
+                        <Input className="input pl-4 border-0 input_mobile" placeholder="Search"/>
+                    </div>
+                </InputGroup>
 
             </div>
         </div>
