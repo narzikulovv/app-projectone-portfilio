@@ -73,17 +73,17 @@ const Example = (props) => {
                                 <NavLink href="#!"><Link to="/категории">{getText("kategoriyalar")}</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><Link to="/партнеры">Партнеры</Link></NavLink>
+                                <NavLink href="#!"><Link to="/партнеры">{getText("hamkor")}</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><Link to="/сервисные">Сервисные центры</Link></NavLink>
+                                <NavLink href="#!"><Link to="/сервисные">{getText("xizmatkorsatishmarkazlari")}</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><Link to="/новости">Новости</Link></NavLink>
+                                <NavLink href="#!"><Link to="/новости">{getText("yangiliklar")}</Link></NavLink>
                             </NavItem>
 
                             <NavItem className="navItem1">
-                                <NavLink href="#!"><Link to="контакты">Контакты</Link></NavLink>
+                                <NavLink href="#!"><Link to="контакты">{getText("kontakty")}</Link></NavLink>
                             </NavItem>
                         </Nav>
                         <NavbarText className="d-flex sardor">
@@ -97,7 +97,7 @@ const Example = (props) => {
 
 
                             <InputGroup className="d-flex search">
-                                <Input className="input " placeholder="Search"/>
+                                <Input className="input " placeholder={getText("qidirmoq")}/>
                                 <InputGroupAddon addonType="append" className="lupa social4">
                                     <Button type="button"> <img src="./images/lupa.svg" alt=""/></Button>
                                 </InputGroupAddon>

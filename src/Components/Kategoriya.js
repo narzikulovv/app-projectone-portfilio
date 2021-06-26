@@ -1,22 +1,16 @@
 import React from 'react';
 
 
-import LightGallery from 'lightgallery/react';
+
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import 'lightgallery/scss/lightgallery.scss';
 import 'lightgallery/scss/lg-zoom.scss';
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
-
+import {getText} from "../locales";
 
 
 const Kategoriya = () => {
-
-
-
-
 
     return (
         <div className="gradiend container-fluid" >
@@ -25,9 +19,9 @@ const Kategoriya = () => {
                 <div className="row rov">
                     <div className="col-12 katagoriya ">
                         <div className="container d-flex align-items-center justify-content-between write" >
-                            <h2>Категории</h2>
+                            <h2>{getText("kategoriyalar")}</h2>
                             <a href="#!" className="nav-link text-dark pasmatrit">
-                                Посмотреть все <img src="./images/right_arrow.svg" alt=""/></a>
+                                {getText("korish")}<img src="./images/right_arrow.svg" alt=""/></a>
                             <a href="#!" className="nav-link text-dark vse">Все<img src="./images/right_arrow.svg" alt=""/></a>
                         </div>
                     </div>

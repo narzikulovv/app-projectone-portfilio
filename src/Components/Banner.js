@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
+import {getText} from "../locales";
 
 
 const Banner = () => {
@@ -10,7 +11,7 @@ const Banner = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
-    }
+    };
 
     return (
         <div className="container-fluid banner__bg" data-aos="zoom-in">
@@ -19,13 +20,12 @@ const Banner = () => {
                 <Slider {...settings}>
                     <div className=" row banner__content d-flex">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 banner__left">
-                            <h1>Эффектный просмотр </h1>
-                            <p>Полное погружение с телевизорами Artel 8K</p>
+                            <h1>{getText("ajoyib")}</h1>
+                            <p>{getText("artel")}</p>
                             <div className="row banner__left__footer">
                                 <div className="col-12 d-flex banner__desktop__footer">
-                                    <button type="button" className="btn btn-success mr-5">Купить онлайн</button>
-                                    <button type="button" className="btn btn-light d-flex align-items-center">Узнать
-                                        больше <img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
+                                    <button type="button" className="btn btn-success mr-5">{getText("onlayn")}</button>
+                                    <button type="button" className="btn btn-light d-flex align-items-center">{getText("qoshimcha")}<img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
                                     </button>
                                 </div>
                             </div>
@@ -38,13 +38,12 @@ const Banner = () => {
                     </div>
                     <div className=" row banner__content d-flex">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 banner__left">
-                            <h1>Эффектный просмотр </h1>
-                            <p>Полное погружение с телевизорами Artel 8K</p>
+                            <h1>{getText("ajoyib")}</h1>
+                            <p>{getText("artel")}</p>
                             <div className="row banner__left__footer">
                                 <div className="col-12 d-flex">
-                                    <button type="button" className="btn btn-success mr-5">Купить онлайн</button>
-                                    <button type="button" className="btn btn-light d-flex align-items-center">Узнать
-                                        больше <img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
+                                    <button type="button" className="btn btn-success mr-5">{getText("onlayn")}</button>
+                                    <button type="button" className="btn btn-light d-flex align-items-center">{getText("qoshimcha")}<img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
                                     </button>
                                 </div>
                             </div>
@@ -57,13 +56,12 @@ const Banner = () => {
                     </div>
                     <div className=" row banner__content d-flex">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 banner__left">
-                            <h1>Эффектный просмотр </h1>
-                            <p>Полное погружение с телевизорами Artel 8K</p>
+                            <h1>{getText("ajoyib")}</h1>
+                            <p>{getText("artel")}</p>
                             <div className="row banner__left__footer">
                                 <div className="col-12 d-flex">
-                                    <button type="button" className="btn btn-success mr-5">Купить онлайн</button>
-                                    <button type="button" className="btn btn-light d-flex align-items-center">Узнать
-                                        больше <img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
+                                    <button type="button" className="btn btn-success mr-5">{getText("onlayn")}</button>
+                                    <button type="button" className="btn btn-light d-flex align-items-center">{getText("qoshimcha")}<img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
                                     </button>
                                 </div>
                             </div>
@@ -76,13 +74,12 @@ const Banner = () => {
                     </div>
                     <div className=" row banner__content d-flex">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 banner__left">
-                            <h1>Эффектный просмотр </h1>
-                            <p>Полное погружение с телевизорами Artel 8K</p>
+                            <h1>{getText("ajoyib")}</h1>
+                            <p>{getText("artel")}</p>
                             <div className="row banner__left__footer">
                                 <div className="col-12 d-flex">
-                                    <button type="button" className="btn btn-success mr-5">Купить онлайн</button>
-                                    <button type="button" className="btn btn-light d-flex align-items-center">Узнать
-                                        больше <img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
+                                    <button type="button" className="btn btn-success mr-5">{getText("onlayn")}</button>
+                                    <button type="button" className="btn btn-light d-flex align-items-center">{getText("qoshimcha")}<img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/>
                                     </button>
                                 </div>
                             </div>
@@ -131,13 +128,12 @@ const Banner = () => {
                     </div>
                 </Slider>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 banner__mobile__footer">
-                    <h1>Эффектный просмотр </h1>
-                    <p>Полное погружение с телевизорами Artel 8K</p>
+                    <h1>{getText("ajoyib")}</h1>
+                    <p>{getText("artel")}</p>
                     <div className="row banner__left__footer">
                         <div className="col-12 d-flex mobile__btn">
-                            <button type="button" className="btn btn-success btn__one">Купить онлайн</button>
-                            <button type="button" className="btn btn-light d-flex align-items-center btn__two">Узнать
-                                больше <img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/></button>
+                            <button type="button" className="btn btn-success btn__one">{getText("onlayn")}</button>
+                            <button type="button" className="btn btn-light d-flex align-items-center btn__two">{getText("qoshimcha")}<img src="./images/right_arrow.svg" className="ml-3" alt="Eror"/></button>
                         </div>
                     </div>
                 </div>

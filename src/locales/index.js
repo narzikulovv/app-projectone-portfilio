@@ -15,3 +15,4 @@ export const getText = (word) => {
             ru[word] :
             en[word]
 };
+
