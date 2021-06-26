@@ -9,17 +9,21 @@ import {
     NavLink,
     NavbarText
 } from 'reactstrap';
-import {InputGroup, InputGroupAddon, Button, Input} from 'reactstrap';
+import {InputGroup, InputGroupAddon, Button, Input, Modal, ModalBody, ModalFooter} from 'reactstrap';
 import {AiFillHeart} from "react-icons/ai";
 import {AiOutlineShoppingCart} from "react-icons/ai";
 import {MdExitToApp} from "react-icons/md";
 import {Link} from "react-router-dom"
+import {LENLUAGE} from "../tools/constans";
+import {getLenguage, getText} from "../locales";
 
 
 const Example = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+
 
 
     const exitHomePage = (r) => {
@@ -30,12 +34,19 @@ const Example = (props) => {
         localStorage.setItem("mail", "");
         localStorage.setItem("logget", "");
 
-        props.history.push("/gygy")
+        window.location.href = "/"
+
+    };
+
+
+    const chengeLenguage = (e) => {
+        localStorage.setItem(LENLUAGE, e.target.value);
+        document.location.reload(true);
     };
 
 
     return (
-        <div className="container">
+        <div className="container" data-aos="flip-up">
             <div className="row w-100 ">
                 <Navbar color="light" light className="w-100 bg-white sardor" expand="md">
                     <Link to="/главний"><img src="./images/Logo.svg" alt=""/></Link>
@@ -59,7 +70,7 @@ const Example = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className="navItem">
-                                <NavLink href="#!"><Link to="/категории">Категории</Link></NavLink>
+                                <NavLink href="#!"><Link to="/категории">{getText("kategoriyalar")}</Link></NavLink>
                             </NavItem>
                             <NavItem className="navItem1">
                                 <NavLink href="#!"><Link to="/партнеры">Партнеры</Link></NavLink>
@@ -76,6 +87,15 @@ const Example = (props) => {
                             </NavItem>
                         </Nav>
                         <NavbarText className="d-flex sardor">
+
+
+                            <select onChange={chengeLenguage} className="form-control select">
+                                <option value="ru" selected={getLenguage() === "ru"}>RU</option>
+                                <option value="en" selected={getLenguage() === "en"}>EN</option>
+                                <option value="uz" selected={getLenguage() === "uz"}>UZ</option>
+                            </select>
+
+
                             <InputGroup className="d-flex search">
                                 <Input className="input " placeholder="Search"/>
                                 <InputGroupAddon addonType="append" className="lupa social4">
@@ -114,6 +134,20 @@ const Example = (props) => {
                 </InputGroup>
 
             </div>
+
+            <Modal>
+                <ModalBody>
+                    Sahifadan chiqmoqchimisiz? <br/>
+                    Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi
+                </ModalBody>
+                <ModalFooter>
+                    <button type="button" className="btn btn-danger">Ha</button>
+                    <button type="button" className="btn btn-success">Yoq</button>
+                </ModalFooter>
+
+            </Modal>
+
+
         </div>
     );
 }

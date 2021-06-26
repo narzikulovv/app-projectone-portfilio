@@ -19,7 +19,7 @@ const Kategoriya = () => {
 
 
     return (
-        <div className="gradiend container-fluid">
+        <div className="gradiend container-fluid" >
 
             <div className="container con">
                 <div className="row rov">
@@ -32,7 +32,7 @@ const Kategoriya = () => {
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6 px-0 mb-2 py-0 dazmol h-100">
-                       <div className="h-100 w-100 " id="lightgallery">
+                       <div className="h-100 w-100 " id="lightgallery" data-aos="zoom-in-up">
                            <a href="images/dazmol.png" data-lg-size="1600-2400"><img src="./images/dazmol.png"className="w-100 h-100" alt=""/></a>
                            <div className="write">
                                <h5>Мелкая бытовая <br/>
@@ -44,7 +44,7 @@ const Kategoriya = () => {
                         <div className="container rasmlar_container">
                             <div className="row mb rasmlar_row">
                                 <div className="col-6   rasmlar_col">
-                                   <div className="col-rasm" id="lightgallery">
+                                   <div className="col-rasm" id="lightgallery" data-aos="zoom-in-up">
                                        <a href="images/telefon.png" data-lg-size="1600-2400"><img src="./images/telefon.png" alt=""/></a>
                                        <div className="write2">
                                            <h5>Телефоны</h5>

@@ -13,7 +13,7 @@ const Banner = () => {
     }
 
     return (
-        <div className="container-fluid banner__bg">
+        <div className="container-fluid banner__bg" data-aos="zoom-in">
             {/* ////////desktop uchun///////// */}
             <div className="container desktop">
                 <Slider {...settings}>
