@@ -3,7 +3,6 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
@@ -112,7 +111,7 @@ const Example = (props) => {
 
 
                                 <button
-                                    onClick={exitHomePage}
+                                    onClick={toggle}
                                     type="button"
                                     className="d-flex align-items-center justify-content-center">
 
@@ -135,14 +134,14 @@ const Example = (props) => {
 
             </div>
 
-            <Modal>
+            <Modal isOpen={isOpen} toggle={() => toggle({isOpen: false})}>
                 <ModalBody>
-                    Sahifadan chiqmoqchimisiz? <br/>
-                    Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi
+                    <h4><b>Sahifadan chiqmoqchimisiz?</b></h4> <br/>
+                    <i>Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi</i>
                 </ModalBody>
                 <ModalFooter>
-                    <button type="button" className="btn btn-danger">Ha</button>
-                    <button type="button" className="btn btn-success">Yoq</button>
+                    <button type="button" className="btn btn-danger" onClick={exitHomePage}>Ha</button>
+                    <button type="button" className="btn btn-success" onClick={()=> toggle({isOpen: false})}>Yoq</button>
                 </ModalFooter>
 
             </Modal>

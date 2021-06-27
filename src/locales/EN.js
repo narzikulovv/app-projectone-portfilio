@@ -9,6 +9,6 @@ export const en = {
     ajoyib: "Effective prosmotr",
     artel: "Full immersion with Artel 8K TVs",
     onlayn: "Buy online",
-    qoshimcha: "Uznat bolshe",
+    qoshimcha: "To learn more",
     korish: "See everything"
 };
