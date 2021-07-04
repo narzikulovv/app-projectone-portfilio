@@ -134,17 +134,17 @@ const Example = (props) => {
 
             </div>
 
-            <Modal isOpen={isOpen} toggle={() => toggle({isOpen: false})}>
-                <ModalBody>
-                    <h4><b>Sahifadan chiqmoqchimisiz?</b></h4> <br/>
-                    <i>Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi</i>
-                </ModalBody>
-                <ModalFooter>
-                    <button type="button" className="btn btn-danger" onClick={exitHomePage}>Ha</button>
-                    <button type="button" className="btn btn-success" onClick={()=> toggle({isOpen: false})}>Yoq</button>
-                </ModalFooter>
+                <Modal isOpen={isOpen} toggle={() => toggle({isOpen: false})}>
+                    <ModalBody>
+                        <h4><b>Sahifadan chiqmoqchimisiz?</b></h4> <br/>
+                        <i>Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi</i>
+                    </ModalBody>
+                    <ModalFooter>
+                        <button type="button" className="btn btn-danger" onClick={exitHomePage}>Ha</button>
+                        <button type="button" className="btn btn-success" onClick={()=> toggle({isOpen: false})}>Yoq</button>
+                    </ModalFooter>
 
-            </Modal>
+                </Modal>
 
 
         </div>
