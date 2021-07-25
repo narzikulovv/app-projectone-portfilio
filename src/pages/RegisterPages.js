@@ -34,12 +34,12 @@ const RegisterPages = (props) => {
 
     return (
         <div className="register">
-            <div className="container ">
-                <div className="row">
-                    <div className="col-5 offset-3 mt-2 ">
+            <div className="container-fluid register_container">
+                <div className="row justify-content-center align-items-center register_row">
+                    <div className="col-lg-5 col-md-6 col-sm-12 col-12  mt-2 register_col5">
                         <h1 className="text-center ">Register page</h1>
                         <div className="card ">
-                            <div className="card-body">
+                            <div className="card-body pt-0 pb-0">
                                 <form onSubmit={makeRegister}>
                                     <label htmlFor="name" className="w-100 mb-3"> Name
                                         <input type="text" id="name" placeholder="Name" name="name"
